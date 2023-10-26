@@ -35,6 +35,29 @@ namespace GameAttempt.Components
         {
             InitializeComponent();
 
+            // Enable dragging for buttons within panel1
+            foreach (Control control in panRandomList.Controls)
+            {
+                if (control is Button button)
+                {
+                    button.MouseDown += Button_MouseDown;
+                }
+            }
+
+            // Enable dropping for both panels
+            panRandomList.AllowDrop = true;
+            panSortedList.AllowDrop = true;
+
+            panRandomList.DragEnter += Panel_DragEnter;
+            panSortedList.DragEnter += Panel_DragEnter;
+
+            panRandomList.DragDrop += Panel_DragDrop;
+            panSortedList.DragDrop += Panel_DragDrop;
+
+            btnCheck.Click += btnCheck_Click;
+
+            Load += ReplacingBooksUC_Load;
+
         }
         //-------------------------------------------------------------------------------------------------------------------------------------------------------
         /// <summary>
@@ -44,6 +67,10 @@ namespace GameAttempt.Components
         /// <param name="e"></param>
         private void ReplacingBooksUC_Load(object sender, EventArgs e)
         {
+
+            panSortedList.AllowDrop = true;
+            panRandomList.AllowDrop = true;
+
             // Generate random 10 call numbers
             var randomNumbers = ranGen.GenerateRandomNumbers(3, 10);
 
@@ -73,7 +100,12 @@ namespace GameAttempt.Components
             //plays music
             StartPageUS.play.controls.play();
         }
-
+        //-------------------------------------------------------------------------------------------------------
+        /// <summary>
+        /// Checks if the buttons are in the correct order
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnCheck_Click(object sender, EventArgs e)
         {
             listClass.GetCorrectList().Clear();
@@ -88,7 +120,7 @@ namespace GameAttempt.Components
             }
             else if (panBookRowRanList.Controls.Count == 0)
             {
-                MessageBox.Show("Please Click the Check Button");
+               // MessageBox.Show("Please Click the Check Button");
             }
             else
             {
@@ -153,6 +185,36 @@ namespace GameAttempt.Components
             listClass.GetUserSrtList().Clear();
             listClass.GetCorrectList().Clear();
 
+        }
+        //--------------------------------------------------------------------------------------------------------
+        private Button selectedButton;
+
+        private void Button_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                selectedButton = sender as Button;
+                DoDragDrop(selectedButton, DragDropEffects.Move);
+            }
+        }
+
+        private void Panel_DragEnter(object sender, DragEventArgs e)
+        {
+            if (e.Data.GetDataPresent(typeof(Button)))
+            {
+                e.Effect = DragDropEffects.Move;
+            }
+        }
+
+        private void Panel_DragDrop(object sender, DragEventArgs e)
+        {
+            Panel destinationPanel = sender as Panel;
+            Button draggedButton = e.Data.GetData(typeof(Button)) as Button;
+
+            if (destinationPanel != null && draggedButton != null)
+            {
+                destinationPanel.Controls.Add(draggedButton);
+            }
         }
     }
 }

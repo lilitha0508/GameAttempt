@@ -1,0 +1,26 @@
+Read Me File
+
+How to Installation of Project:
+1: You will be given a GitHub link. Open up Visual Studio 2022, on the right-hand side you will see "Clone a Repository”.
+2: Click on the Clone a Repository and you will be taken to the next page where you will insert the GitHub link received by you. Allow the project to be cloned. 
+3: On the right-hand side you will see "DeweyDecimalClassfication.sln" Click on it and let the project fully load. 
+4: Click the green play button on the top to start the application. 
+
+How to Use the Project:
+1: Once you have ran the project, A start menu will appear where there is an option to start the game, change some settings in options, or exit the application.
+2: If you have chosen the options button you will then be directed to the options window, where the music volume can be adjusted or muted. From there you can start the game.
+3: The game begins with a storyline of the game, you can skip the game but in order to move past the window the skip button must be pressed.
+4: A loading page will then appear that will take you to the game options after loading.
+5: Here you’ll decide which game to play.
+Replacing Books:
+-	A form with books on the table will appear.
+-	Drag the book onto the other table to mark it for replacement.
+-	After the books have been placed on the table, click the button check.
+-	if the order is correct 10 points will be allocated to the user, else the game will be over.
+Identifying Areas:
+-	An information page will appear once selected that explains the task and how to play.
+-	The task begins in order to plat you must select the number then select the matching description, and take note of the color sets, each call number button has a matching description (in the selection and correct table only).
+-	Once done click on the check button to see if correct or incorrect.
+-	If you want to play again the repeat icon will refresh the game, but there are only 2 attempts.
+-	If 2 attempts are done the game will be over. 
+

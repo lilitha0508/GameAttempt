@@ -52,6 +52,7 @@
             // 
             // panSortedList
             // 
+            this.panSortedList.AllowDrop = true;
             this.panSortedList.BackColor = System.Drawing.Color.Transparent;
             this.panSortedList.BackgroundImage = global::GameAttempt.Properties.Resources.table;
             this.panSortedList.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -295,10 +296,12 @@
             // 
             // ReplacingBooksUC
             // 
+            this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::GameAttempt.Properties.Resources.gameBack;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Controls.Add(this.btnBook1);
             this.Controls.Add(this.btnBook3);
             this.Controls.Add(this.btnBook10);
             this.Controls.Add(this.btnBook9);
@@ -311,7 +314,6 @@
             this.Controls.Add(this.lblScore);
             this.Controls.Add(this.btnBook5);
             this.Controls.Add(this.panSortedList);
-            this.Controls.Add(this.btnBook1);
             this.Controls.Add(this.panRandomList);
             this.Controls.Add(this.panBookRowSortList);
             this.Controls.Add(this.panBookRowRanList);

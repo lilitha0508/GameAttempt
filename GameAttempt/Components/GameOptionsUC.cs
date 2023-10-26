@@ -1,4 +1,6 @@
-﻿using GameAttempt.Start;
+﻿using GameAttempt.Games;
+using GameAttempt.GeneralScreens;
+using GameAttempt.Start;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,7 +11,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using WMPLib;
 // ref: https://www.youtube.com/watch?v=iy4JC5yA3B4&t=8s&ab_channel=RohitProgrammingZone
 // Game menu that allows the user to pick a game as if it where a player.
 // This uses images and a list to accturately pick and display the correct game
@@ -74,20 +75,22 @@ namespace GameAttempt.Components
         /// <param name="e"></param>
         private void btnStartGO_Click(object sender, EventArgs e)
         {
-            if(count == 0)
+            LoadingScreen load = new LoadingScreen();
+            GameOptions game = new GameOptions();
+
+            if (count == 0)
             {
-                GameOptions game = new GameOptions();
-                game.Close();
-                LoadingScreen load = new LoadingScreen();
-                load.ShowDialog();
+                ReplacingBooks replacingBooks = new ReplacingBooks();
+                replacingBooks.ShowDialog();
             }
             else if (count == 1)
             {
-
+                IdentifyAreas identifyAreas = new IdentifyAreas();
+                identifyAreas.ShowDialog();
             }
             else if (count == 2)
             {
-
+                
             }
         }
         //-------------------------------------------------------------------------------------------------------------------------------------------------------

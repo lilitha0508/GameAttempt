@@ -50,7 +50,6 @@
             this.Name = "GameOptions";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GameOptions";
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.GameOptions_KeyDown);
             this.ResumeLayout(false);
 
         }

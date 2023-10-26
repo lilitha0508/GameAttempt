@@ -171,7 +171,7 @@
         private System.Windows.Forms.PictureBox pbLeftArrow;
         private System.Windows.Forms.PictureBox pbGamePick;
         private ePOSOne.btnProduct.Button_WOC btnStartGO;
-        private System.Windows.Forms.Label lblGameTaskGO;
         private System.Windows.Forms.ImageList imlstGameTaskImages;
+        public System.Windows.Forms.Label lblGameTaskGO;
     }
 }

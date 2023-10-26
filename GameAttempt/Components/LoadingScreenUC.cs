@@ -1,4 +1,5 @@
 ﻿using GameAttempt.Games;
+using GameAttempt.GeneralScreens;
 using GameAttempt.Start;
 using System;
 using System.Collections.Generic;
@@ -14,7 +15,11 @@ using System.Windows.Forms;
 namespace GameAttempt.Components
 {
     public partial class LoadingScreenUC : UserControl
-    {
+    {   
+        public string choice = string.Empty;
+
+       // GameOptions gameOptions;
+
         /// <summary>
         /// Video Screen
         /// </summary>
@@ -36,6 +41,7 @@ namespace GameAttempt.Components
         {
             wmpLoading.Ctlcontrols.play();
             timrLoadingBar.Start();
+            
         }
         //-------------------------------------------------------------------------------------------------------------------------------------------------------
         /// <summary>
@@ -47,8 +53,7 @@ namespace GameAttempt.Components
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void timrLoadingBar_Tick(object sender, EventArgs e)
-        {
-            ReplacingBooks replacingBooks = new ReplacingBooks();
+        {           
 
             if(pbLoading.Value < 100)
             {
@@ -60,15 +65,29 @@ namespace GameAttempt.Components
                 timrLoadingBar.Stop();
                 //open game below
                 //replacingBooks.Show();
+
             }
 
             while(pbLoading.Value == 100)
             {
                 timrLoadingBar.Stop();
+                
+                GameOptions game = new GameOptions();
+                game.ShowDialog();
 
-                replacingBooks.ShowDialog();
-                this.Hide();
+                this.Hide();   
             }
+        }
+        //-------------------------------------------------------------------------------------------------------------------------------------------------------
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void GameOptionsUC_Load(object sender, EventArgs e)
+        {
+            StartPageUS.play.settings.setMode("loop", true);
+            StartPageUS.play.controls.play();
         }
     }
 }

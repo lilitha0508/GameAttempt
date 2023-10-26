@@ -24,22 +24,46 @@ namespace GameAttempt.Classes
         /// URL: https://www.w3resource.com/csharp-exercises/string/csharp-string-exercise-12.php
         /// This code preforms a bubble sorting algorithm with the call list
         /// </summary>
-        public void bubbleSort()
+        public void bubbleSort(List<string> list)
         {
-            string temp;
-
-            for (int count = 0; count < listClass.GetCallNumList().Count; count++)
+            for (int count = 0; count < list.Count; count++)
             {
-                for (int i = 0; i < listClass.GetCallNumList().Count - 1; i++)
+                for (int i = 0; i < list.Count - 1; i++)
                 {
-                    if (listClass.GetCallNumList()[i].CompareTo(listClass.GetCallNumList()[i + 1]) > 0)
+                    int num1 = ExtractNumericPart(list[i]);
+                    int num2 = ExtractNumericPart(list[i + 1]);
+
+                    if (num1 > num2)
                     {
-                        temp = listClass.GetCallNumList()[i];
-                        listClass.GetCallNumList()[i] = listClass.GetCallNumList()[i + 1];
-                        listClass.GetCallNumList()[i + 1] = temp;
+                        Swap(list, i, i + 1);
+                    }
+                    else if (num1 == num2)
+                    {
+                        if (string.Compare(list[i], list[i + 1]) > 0)
+                        {
+                            Swap(list, i, i + 1);
+                        }
                     }
                 }
             }
+        }
+
+        private int ExtractNumericPart(string callNumber)
+        {
+            int numericPart;
+            string[] parts = callNumber.Split('.');
+            if (parts.Length > 1 && int.TryParse(parts[1], out numericPart))
+            {
+                return numericPart;
+            }
+            return 0;
+        }
+
+        private void Swap(List<string> list, int index1, int index2)
+        {
+            string temp = list[index1];
+            list[index1] = list[index2];
+            list[index2] = temp;
         }
     }
 }

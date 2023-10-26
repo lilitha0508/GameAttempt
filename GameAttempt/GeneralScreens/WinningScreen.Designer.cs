@@ -28,12 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.winningScreenUC1 = new GameAttempt.Components.WinningScreenUC();
+            this.SuspendLayout();
+            // 
+            // winningScreenUC1
+            // 
+            this.winningScreenUC1.BackColor = System.Drawing.Color.Transparent;
+            this.winningScreenUC1.Location = new System.Drawing.Point(-60, -41);
+            this.winningScreenUC1.Name = "winningScreenUC1";
+            this.winningScreenUC1.Size = new System.Drawing.Size(810, 458);
+            this.winningScreenUC1.TabIndex = 0;
+            // 
+            // WinningScreen
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.winningScreenUC1);
+            this.Name = "WinningScreen";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "WinningScreen";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private Components.WinningScreenUC winningScreenUC1;
     }
 }

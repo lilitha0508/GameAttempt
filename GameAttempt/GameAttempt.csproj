@@ -36,6 +36,9 @@
     <Reference Include="Control.Draggable, Version=1.0.5049.269, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Control.Draggable.1.0.5049.269\lib\net35-Client\Control.Draggable.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -47,14 +50,27 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Buttons.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Classes\Button_WOC.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Classes\FindCalllNumbers.cs" />
     <Compile Include="Classes\ListClass.cs" />
+    <Compile Include="Classes\matchTheColumn.cs" />
     <Compile Include="Classes\RanGenClass.cs" />
     <Compile Include="Classes\SortingClass.cs" />
+    <Compile Include="Classes\Tree.cs" />
+    <Compile Include="Components\FindCallNumUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\FindCallNumUC.Designer.cs">
+      <DependentUpon>FindCallNumUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="Components\GameOptionsUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -67,17 +83,17 @@
     <Compile Include="Components\GameOverUC.Designer.cs">
       <DependentUpon>GameOverUC.cs</DependentUpon>
     </Compile>
+    <Compile Include="Components\IdentifyAreaUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\IdentifyAreaUC.Designer.cs">
+      <DependentUpon>IdentifyAreaUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="Components\LoadingScreenUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Components\LoadingScreenUC.Designer.cs">
       <DependentUpon>LoadingScreenUC.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Components\LosingScreenUC.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Components\LosingScreenUC.Designer.cs">
-      <DependentUpon>LosingScreenUC.cs</DependentUpon>
     </Compile>
     <Compile Include="Components\ReplacingBooksUC.cs">
       <SubType>UserControl</SubType>
@@ -109,11 +125,29 @@
     <Compile Include="Components\WinningScreenUC.Designer.cs">
       <DependentUpon>WinningScreenUC.cs</DependentUpon>
     </Compile>
+    <Compile Include="Games\FindCallNum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Games\FindCallNum.Designer.cs">
+      <DependentUpon>FindCallNum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Games\IdentifyAreas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Games\IdentifyAreas.Designer.cs">
+      <DependentUpon>IdentifyAreas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Games\ReplacingBooks.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Games\ReplacingBooks.Designer.cs">
       <DependentUpon>ReplacingBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralScreens\FindCallInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralScreens\FindCallInfo.Designer.cs">
+      <DependentUpon>FindCallInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="GeneralScreens\Form1.cs">
       <SubType>Form</SubType>
@@ -126,6 +160,12 @@
     </Compile>
     <Compile Include="GeneralScreens\GameOverScreen.Designer.cs">
       <DependentUpon>GameOverScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralScreens\IdenAreaInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralScreens\IdenAreaInfo.Designer.cs">
+      <DependentUpon>IdenAreaInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="GeneralScreens\LosingScreen.cs">
       <SubType>Form</SubType>
@@ -165,11 +205,17 @@
     <Compile Include="GeneralScreens\StartOptions.Designer.cs">
       <DependentUpon>StartOptions.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Components\FindCallNumUC.resx">
+      <DependentUpon>FindCallNumUC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Components\GameOptionsUC.resx">
       <DependentUpon>GameOptionsUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Components\GameOverUC.resx">
       <DependentUpon>GameOverUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\IdentifyAreaUC.resx">
+      <DependentUpon>IdentifyAreaUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Components\LoadingScreenUC.resx">
       <DependentUpon>LoadingScreenUC.cs</DependentUpon>
@@ -189,8 +235,17 @@
     <EmbeddedResource Include="Components\WinningScreenUC.resx">
       <DependentUpon>WinningScreenUC.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Games\FindCallNum.resx">
+      <DependentUpon>FindCallNum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Games\IdentifyAreas.resx">
+      <DependentUpon>IdentifyAreas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Games\ReplacingBooks.resx">
       <DependentUpon>ReplacingBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralScreens\FindCallInfo.resx">
+      <DependentUpon>FindCallInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GeneralScreens\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -198,19 +253,20 @@
     <EmbeddedResource Include="GeneralScreens\GameOverScreen.resx">
       <DependentUpon>GameOverScreen.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GeneralScreens\IdenAreaInfo.resx">
+      <DependentUpon>IdenAreaInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GeneralScreens\StoryLine.resx">
       <DependentUpon>StoryLine.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GeneralScreens\WinningScreen.resx">
+      <DependentUpon>WinningScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="GeneralScreens\GameOptions.resx">
       <DependentUpon>GameOptions.cs</DependentUpon>
     </EmbeddedResource>
@@ -225,6 +281,11 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -342,7 +403,36 @@
     <None Include="Resources\gif.gif" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="README FILE.txt" />
+    <Content Include="Read Me File.txt" />
+    <Content Include="Resources\witchSound.mp3" />
+    <None Include="Resources\witch1.png" />
+    <None Include="Resources\witch.png" />
+    <None Include="Resources\PagesInfo.png" />
+    <None Include="Resources\paper.png" />
+    <None Include="Resources\findCallShelf.png" />
+    <None Include="Resources\button.png" />
+    <None Include="Resources\buttonImg.png" />
+    <Content Include="Resources\handCursor.png" />
+    <None Include="Resources\pngegg.png" />
+    <None Include="Resources\scrolll.png" />
+    <None Include="Resources\scrollBack.png" />
+    <None Include="Resources\help.png" />
+    <None Include="Resources\handCursor1.png" />
+    <None Include="Resources\handCursor2.png" />
+    <None Include="Resources\findCallBack.jpg" />
+    <None Include="Resources\idenBackground1.jpg" />
+    <None Include="Resources\repled.png" />
+    <None Include="Resources\replay.png" />
+    <None Include="Resources\singleShelf.png" />
+    <None Include="Resources\shelf.png" />
+    <None Include="Resources\bookshelves2.png" />
+    <None Include="Resources\bookshelves.png" />
+    <None Include="Resources\red X.png" />
+    <None Include="Resources\x.png" />
+    <None Include="Resources\x.jpg" />
+    <None Include="Resources\openBook.jpg" />
+    <None Include="Resources\openBooktrans.png" />
+    <None Include="Resources\idenBackground.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -34,14 +34,6 @@ namespace GameAttempt.Components
         private void StoryLineUC_Load(object sender, EventArgs e)
         {
             wmpStoryLine.Ctlcontrols.play();
-
-            GameOptions game = new GameOptions();
-            if (wmpStoryLine.playState == WMPLib.WMPPlayState.wmppsMediaEnded)
-            {
-                // Video playback has ended, open the next form
-                game.Show();
-
-            }
         }
         //-------------------------------------------------------------------------------------------------------------------------------------------------------
         /// <summary>
@@ -52,9 +44,12 @@ namespace GameAttempt.Components
         private void btnSkipStory_Click(object sender, EventArgs e)
         {
             wmpStoryLine.Ctlcontrols.stop();
-            GameOptions game = new GameOptions();
-            game.Show();
-            this.Hide();
+            LoadingScreen loadingScreen = new LoadingScreen();
+            loadingScreen.ShowDialog();
+            //this.Hide();
+            //StoryLine storyLine = new StoryLine();
+            //storyLine.Close();
+            ((Form)this.Parent).Close();
         }
         //-------------------------------------------------------------------------------------------------------------------------------------------------------
         /// <summary>
@@ -64,12 +59,12 @@ namespace GameAttempt.Components
         /// <param name="e"></param>
         private void tmrStoryLine_Tick(object sender, EventArgs e)
         {
-            GameOptions game = new GameOptions();
+            LoadingScreen loading = new LoadingScreen();
             if (wmpStoryLine.playState == WMPLib.WMPPlayState.wmppsMediaEnded)
             {
                 // Video playback has ended, open the next form
-                    game.Show();
-                
+                loading.ShowDialog();
+                this.Hide();
             }
         }
     }

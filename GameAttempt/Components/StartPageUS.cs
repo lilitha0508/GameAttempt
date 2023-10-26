@@ -76,6 +76,8 @@ namespace GameAttempt.Components
         /// <param name="e"></param>
         private void StartPageUS_Load(object sender, EventArgs e)
         {
+            //Loop song
+            play.settings.setMode("loop", true);
             play.controls.play();
         }
     }

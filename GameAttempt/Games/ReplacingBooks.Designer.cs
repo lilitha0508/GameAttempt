@@ -34,23 +34,23 @@
             // 
             // replacingBooksUC1
             // 
+            this.replacingBooksUC1.AllowDrop = true;
             this.replacingBooksUC1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("replacingBooksUC1.BackgroundImage")));
             this.replacingBooksUC1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.replacingBooksUC1.Location = new System.Drawing.Point(0, 0);
+            this.replacingBooksUC1.Location = new System.Drawing.Point(0, -1);
             this.replacingBooksUC1.Name = "replacingBooksUC1";
-            this.replacingBooksUC1.Size = new System.Drawing.Size(1157, 715);
+            this.replacingBooksUC1.Size = new System.Drawing.Size(1340, 867);
             this.replacingBooksUC1.TabIndex = 0;
             // 
             // ReplacingBooks
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1157, 715);
+            this.ClientSize = new System.Drawing.Size(1334, 866);
             this.Controls.Add(this.replacingBooksUC1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ReplacingBooks";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ReplacingBooks";
             this.ResumeLayout(false);
 
         }

@@ -46,7 +46,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(1400, 952);
+=======
+            this.ClientSize = new System.Drawing.Size(1386, 952);
+>>>>>>> 52ac0c188cfa70f943d1dd1d9413ca3caf5e6d50
             this.Controls.Add(this.identifyAreaUC1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "IdentifyAreas";

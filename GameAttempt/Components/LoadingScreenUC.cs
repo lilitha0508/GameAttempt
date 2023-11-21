@@ -86,7 +86,10 @@ namespace GameAttempt.Components
         /// <param name="e"></param>
         private void GameOptionsUC_Load(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             StartPageUS.play.settings.setMode("loop", true);
+=======
+>>>>>>> 52ac0c188cfa70f943d1dd1d9413ca3caf5e6d50
             StartPageUS.play.controls.play();
         }
     }

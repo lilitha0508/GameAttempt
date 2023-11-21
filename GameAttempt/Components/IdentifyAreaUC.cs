@@ -1,16 +1,25 @@
 ﻿using GameAttempt.Classes;
+<<<<<<< HEAD
 using GameAttempt.Games;
 using GameAttempt.GeneralScreens;
 using GameAttempt.Properties;
+=======
+using GameAttempt.GeneralScreens;
+>>>>>>> 52ac0c188cfa70f943d1dd1d9413ca3caf5e6d50
 using GameAttempt.Start;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+<<<<<<< HEAD
 using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
 using System.Linq.Expressions;
+=======
+using System.Drawing;
+using System.Linq;
+>>>>>>> 52ac0c188cfa70f943d1dd1d9413ca3caf5e6d50
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -113,6 +122,10 @@ namespace GameAttempt.Components
             }
             timer.Stop();
         }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 52ac0c188cfa70f943d1dd1d9413ca3caf5e6d50
         //------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
         /// <summary>
         /// button 1 on click method that houses the case for all clicked buttons
@@ -243,11 +256,14 @@ namespace GameAttempt.Components
                     checkAnswer.Enabled = false;
 
                     setCorrectButtonText();
+<<<<<<< HEAD
 
                     MessageBox.Show("Congratulations! You won! You will no proceed to level 2, Find Call Number");
 
                     FindCallNum findingCall = new FindCallNum();
                     findingCall.ShowDialog();
+=======
+>>>>>>> 52ac0c188cfa70f943d1dd1d9413ca3caf5e6d50
                 }
                 else
                 {
@@ -449,7 +465,11 @@ namespace GameAttempt.Components
             }
             catch (Exception)
             {
+<<<<<<< HEAD
                 firstInputColumnAB.Text = "1";
+=======
+                firstInputColumnAB.Text = "???";
+>>>>>>> 52ac0c188cfa70f943d1dd1d9413ca3caf5e6d50
             }
 
             try
@@ -458,7 +478,11 @@ namespace GameAttempt.Components
             }
             catch (Exception)
             {
+<<<<<<< HEAD
                 secondInputColumnAB.Text = "2";
+=======
+                secondInputColumnAB.Text = "???";
+>>>>>>> 52ac0c188cfa70f943d1dd1d9413ca3caf5e6d50
             }
 
             try
@@ -467,7 +491,11 @@ namespace GameAttempt.Components
             }
             catch (Exception)
             {
+<<<<<<< HEAD
                 thirdInputColumnAB.Text = "3";
+=======
+                thirdInputColumnAB.Text = "???";
+>>>>>>> 52ac0c188cfa70f943d1dd1d9413ca3caf5e6d50
             }
 
             try
@@ -476,7 +504,11 @@ namespace GameAttempt.Components
             }
             catch (Exception)
             {
+<<<<<<< HEAD
                 fourthInputColumnAB.Text = "4";
+=======
+                fourthInputColumnAB.Text = "???";
+>>>>>>> 52ac0c188cfa70f943d1dd1d9413ca3caf5e6d50
             }
 
             try
@@ -485,7 +517,11 @@ namespace GameAttempt.Components
             }
             catch (Exception)
             {
+<<<<<<< HEAD
                 firstInputColumnBB.Text = "1";
+=======
+                firstInputColumnBB.Text = "???";
+>>>>>>> 52ac0c188cfa70f943d1dd1d9413ca3caf5e6d50
             }
 
             try
@@ -494,7 +530,11 @@ namespace GameAttempt.Components
             }
             catch (Exception)
             {
+<<<<<<< HEAD
                 secondInputColumnBB.Text = "2";
+=======
+                secondInputColumnBB.Text = "???";
+>>>>>>> 52ac0c188cfa70f943d1dd1d9413ca3caf5e6d50
             }
 
             try
@@ -503,7 +543,11 @@ namespace GameAttempt.Components
             }
             catch (Exception)
             {
+<<<<<<< HEAD
                 thirdInputColumnBB.Text = "3";
+=======
+                thirdInputColumnBB.Text = "???";
+>>>>>>> 52ac0c188cfa70f943d1dd1d9413ca3caf5e6d50
             }
 
             try
@@ -512,7 +556,11 @@ namespace GameAttempt.Components
             }
             catch (Exception)
             {
+<<<<<<< HEAD
                 fourthInputColumnBB.Text = "4";
+=======
+                fourthInputColumnBB.Text = "???";
+>>>>>>> 52ac0c188cfa70f943d1dd1d9413ca3caf5e6d50
             }
         }
 
@@ -523,6 +571,7 @@ namespace GameAttempt.Components
         /// <param name="alt"></param>
         private void orderUserInput(bool alt)
         {
+<<<<<<< HEAD
             try
             {
                 if (alt == true)
@@ -553,6 +602,31 @@ namespace GameAttempt.Components
             catch (Exception)
             {
                 MessageBox.Show($"Make sure all boxes are filled", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+=======
+            if (alt == true)
+            {
+                firstInputColumnAB.Text = userInputColumnA.ElementAt(0).ToString();
+                secondInputColumnAB.Text = userInputColumnA.ElementAt(1).ToString();
+                thirdInputColumnAB.Text = userInputColumnA.ElementAt(2).ToString();
+                fourthInputColumnAB.Text = userInputColumnA.ElementAt(3).ToString();
+
+                firstInputColumnBB.Text = userInputColumnB.ElementAt(0).ToString();
+                secondInputColumnBB.Text = userInputColumnB.ElementAt(1).ToString();
+                thirdInputColumnBB.Text = userInputColumnB.ElementAt(2).ToString();
+                fourthInputColumnBB.Text = userInputColumnB.ElementAt(3).ToString();
+            }
+            else
+            {
+                firstInputColumnAB.Text = userInputColumnB.ElementAt(0).ToString();
+                secondInputColumnAB.Text = userInputColumnB.ElementAt(1).ToString();
+                thirdInputColumnAB.Text = userInputColumnB.ElementAt(2).ToString();
+                fourthInputColumnAB.Text = userInputColumnB.ElementAt(3).ToString();
+
+                firstInputColumnBB.Text = userInputColumnA.ElementAt(0).ToString();
+                secondInputColumnBB.Text = userInputColumnA.ElementAt(1).ToString();
+                thirdInputColumnBB.Text = userInputColumnA.ElementAt(2).ToString();
+                fourthInputColumnBB.Text = userInputColumnA.ElementAt(3).ToString();
+>>>>>>> 52ac0c188cfa70f943d1dd1d9413ca3caf5e6d50
             }
         }
 
@@ -639,6 +713,7 @@ namespace GameAttempt.Components
         //------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
         private void exitButton_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             Form1 start = new Form1();
             start.ShowDialog();
         }
@@ -646,6 +721,9 @@ namespace GameAttempt.Components
         private void btnHelp_Click(object sender, EventArgs e)
         {
             MessageBox.Show("The books on the floating shelves are the options you have, the table with numbered books is where your choses will appear and the correct answer will appear in the table labeled correct answer. Click on the book of choice for it to appear in the table of books", "How to Play", MessageBoxButtons.OK);
+=======
+            Application.Exit();
+>>>>>>> 52ac0c188cfa70f943d1dd1d9413ca3caf5e6d50
         }
     }
 }

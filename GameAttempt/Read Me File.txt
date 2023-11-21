@@ -23,10 +23,13 @@ Identifying Areas:
 -	Once done click on the check button to see if correct or incorrect.
 -	If you want to play again the repeat icon will refresh the game, but there are only 2 attempts.
 -	If 2 attempts are done the game will be over. 
+<<<<<<< HEAD
 Find Call Number:
 -   An information page will appear once selected
 -   The user will be required to read the scroll and match the description to the correct call number by selected the button of choice if succefull.
 -   The user will go to the next level if not they will be required to play again until they win
 -   A how to button next to home will expliain the game to the user and the x will take them back to start page.
 -   Game doesnt exit till you win if you wish to leave use the X
+=======
+>>>>>>> 52ac0c188cfa70f943d1dd1d9413ca3caf5e6d50
 

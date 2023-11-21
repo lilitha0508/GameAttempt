@@ -30,9 +30,13 @@
         {
             this.components = new System.ComponentModel.Container();
             this.checkErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+<<<<<<< HEAD
             this.tutTimer = new System.Windows.Forms.Timer(this.components);
             this.gamePanel = new System.Windows.Forms.Panel();
             this.btnHelp = new System.Windows.Forms.Button();
+=======
+            this.gamePanel = new System.Windows.Forms.Panel();
+>>>>>>> 52ac0c188cfa70f943d1dd1d9413ca3caf5e6d50
             this.exitButton = new System.Windows.Forms.Button();
             this.answerLabel = new System.Windows.Forms.Label();
             this.succPictureBox = new System.Windows.Forms.PictureBox();
@@ -59,6 +63,10 @@
             this.thirdInputColumnAB = new System.Windows.Forms.Button();
             this.secondInputColumnAB = new System.Windows.Forms.Button();
             this.firstInputColumnAB = new System.Windows.Forms.Button();
+<<<<<<< HEAD
+=======
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+>>>>>>> 52ac0c188cfa70f943d1dd1d9413ca3caf5e6d50
             this.fourthCorrectColumnBB = new System.Windows.Forms.Button();
             this.secondCorrectColumnBB = new System.Windows.Forms.Button();
             this.thirdCorrectColumnBB = new System.Windows.Forms.Button();
@@ -67,7 +75,10 @@
             this.thirdCorrectColumnAB = new System.Windows.Forms.Button();
             this.secondCorrectColumnAB = new System.Windows.Forms.Button();
             this.firstCorrectColumnAB = new System.Windows.Forms.Button();
+<<<<<<< HEAD
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+=======
+>>>>>>> 52ac0c188cfa70f943d1dd1d9413ca3caf5e6d50
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.checkErrorProvider)).BeginInit();
             this.gamePanel.SuspendLayout();
@@ -84,9 +95,12 @@
             // gamePanel
             // 
             this.gamePanel.BackColor = System.Drawing.Color.Transparent;
+<<<<<<< HEAD
             this.gamePanel.BackgroundImage = global::GameAttempt.Properties.Resources.idenBackground;
             this.gamePanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.gamePanel.Controls.Add(this.btnHelp);
+=======
+>>>>>>> 52ac0c188cfa70f943d1dd1d9413ca3caf5e6d50
             this.gamePanel.Controls.Add(this.exitButton);
             this.gamePanel.Controls.Add(this.answerLabel);
             this.gamePanel.Controls.Add(this.succPictureBox);
@@ -113,6 +127,10 @@
             this.gamePanel.Controls.Add(this.thirdInputColumnAB);
             this.gamePanel.Controls.Add(this.secondInputColumnAB);
             this.gamePanel.Controls.Add(this.firstInputColumnAB);
+<<<<<<< HEAD
+=======
+            this.gamePanel.Controls.Add(this.pictureBox4);
+>>>>>>> 52ac0c188cfa70f943d1dd1d9413ca3caf5e6d50
             this.gamePanel.Controls.Add(this.fourthCorrectColumnBB);
             this.gamePanel.Controls.Add(this.secondCorrectColumnBB);
             this.gamePanel.Controls.Add(this.thirdCorrectColumnBB);
@@ -121,6 +139,7 @@
             this.gamePanel.Controls.Add(this.thirdCorrectColumnAB);
             this.gamePanel.Controls.Add(this.secondCorrectColumnAB);
             this.gamePanel.Controls.Add(this.firstCorrectColumnAB);
+<<<<<<< HEAD
             this.gamePanel.Controls.Add(this.pictureBox4);
             this.gamePanel.Controls.Add(this.pictureBox7);
             this.gamePanel.Location = new System.Drawing.Point(3, 0);
@@ -142,6 +161,14 @@
             this.btnHelp.UseVisualStyleBackColor = false;
             this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
             // 
+=======
+            this.gamePanel.Controls.Add(this.pictureBox7);
+            this.gamePanel.Location = new System.Drawing.Point(3, 0);
+            this.gamePanel.Name = "gamePanel";
+            this.gamePanel.Size = new System.Drawing.Size(1379, 952);
+            this.gamePanel.TabIndex = 0;
+            // 
+>>>>>>> 52ac0c188cfa70f943d1dd1d9413ca3caf5e6d50
             // exitButton
             // 
             this.exitButton.BackgroundImage = global::GameAttempt.Properties.Resources.red_X;
@@ -167,7 +194,11 @@
             // succPictureBox
             // 
             this.succPictureBox.BackColor = System.Drawing.Color.DarkOliveGreen;
+<<<<<<< HEAD
             this.succPictureBox.Location = new System.Drawing.Point(1145, 613);
+=======
+            this.succPictureBox.Location = new System.Drawing.Point(819, 645);
+>>>>>>> 52ac0c188cfa70f943d1dd1d9413ca3caf5e6d50
             this.succPictureBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.succPictureBox.Name = "succPictureBox";
             this.succPictureBox.Size = new System.Drawing.Size(48, 48);
@@ -180,10 +211,16 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Olive;
+<<<<<<< HEAD
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(717, 632);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(139, 22);
+=======
+            this.label1.Location = new System.Drawing.Point(691, 660);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(122, 20);
+>>>>>>> 52ac0c188cfa70f943d1dd1d9413ca3caf5e6d50
             this.label1.TabIndex = 80;
             this.label1.Text = "Correct Answer:";
             // 
@@ -193,7 +230,11 @@
             this.playAgainButtons.BackgroundImage = global::GameAttempt.Properties.Resources.repled;
             this.playAgainButtons.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.playAgainButtons.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+<<<<<<< HEAD
             this.playAgainButtons.Location = new System.Drawing.Point(1280, 441);
+=======
+            this.playAgainButtons.Location = new System.Drawing.Point(1280, 506);
+>>>>>>> 52ac0c188cfa70f943d1dd1d9413ca3caf5e6d50
             this.playAgainButtons.Name = "playAgainButtons";
             this.playAgainButtons.Size = new System.Drawing.Size(75, 61);
             this.playAgainButtons.TabIndex = 70;
@@ -205,7 +246,11 @@
             this.checkAnswer.BackColor = System.Drawing.Color.Maroon;
             this.checkAnswer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.checkAnswer.Font = new System.Drawing.Font("Snap ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.checkAnswer.Location = new System.Drawing.Point(1261, 533);
+=======
+            this.checkAnswer.Location = new System.Drawing.Point(1258, 592);
+>>>>>>> 52ac0c188cfa70f943d1dd1d9413ca3caf5e6d50
             this.checkAnswer.Name = "checkAnswer";
             this.checkAnswer.Size = new System.Drawing.Size(110, 36);
             this.checkAnswer.TabIndex = 69;
@@ -301,7 +346,11 @@
             // 
             this.columnAButton4.BackColor = System.Drawing.Color.SteelBlue;
             this.columnAButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+<<<<<<< HEAD
             this.columnAButton4.Font = new System.Drawing.Font("MS Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+=======
+            this.columnAButton4.Font = new System.Drawing.Font("Onyx", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+>>>>>>> 52ac0c188cfa70f943d1dd1d9413ca3caf5e6d50
             this.columnAButton4.Location = new System.Drawing.Point(457, 268);
             this.columnAButton4.Name = "columnAButton4";
             this.columnAButton4.Size = new System.Drawing.Size(63, 140);
@@ -314,7 +363,11 @@
             // 
             this.columnAButton2.BackColor = System.Drawing.Color.Brown;
             this.columnAButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+<<<<<<< HEAD
             this.columnAButton2.Font = new System.Drawing.Font("MS Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+=======
+            this.columnAButton2.Font = new System.Drawing.Font("Onyx", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+>>>>>>> 52ac0c188cfa70f943d1dd1d9413ca3caf5e6d50
             this.columnAButton2.Location = new System.Drawing.Point(319, 268);
             this.columnAButton2.Name = "columnAButton2";
             this.columnAButton2.Size = new System.Drawing.Size(63, 140);
@@ -327,7 +380,11 @@
             // 
             this.columnAButton3.BackColor = System.Drawing.Color.Chocolate;
             this.columnAButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+<<<<<<< HEAD
             this.columnAButton3.Font = new System.Drawing.Font("MS Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+=======
+            this.columnAButton3.Font = new System.Drawing.Font("Onyx", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+>>>>>>> 52ac0c188cfa70f943d1dd1d9413ca3caf5e6d50
             this.columnAButton3.Location = new System.Drawing.Point(388, 268);
             this.columnAButton3.Name = "columnAButton3";
             this.columnAButton3.Size = new System.Drawing.Size(63, 140);
@@ -340,7 +397,11 @@
             // 
             this.columnAButton1.BackColor = System.Drawing.Color.DarkGreen;
             this.columnAButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+<<<<<<< HEAD
             this.columnAButton1.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+=======
+            this.columnAButton1.Font = new System.Drawing.Font("Onyx", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+>>>>>>> 52ac0c188cfa70f943d1dd1d9413ca3caf5e6d50
             this.columnAButton1.ForeColor = System.Drawing.Color.Black;
             this.columnAButton1.Location = new System.Drawing.Point(250, 268);
             this.columnAButton1.Name = "columnAButton1";
@@ -353,12 +414,20 @@
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+<<<<<<< HEAD
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox3.Image = global::GameAttempt.Properties.Resources.shelf;
             this.pictureBox3.Location = new System.Drawing.Point(194, 258);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(375, 403);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+=======
+            this.pictureBox3.BackgroundImage = global::GameAttempt.Properties.Resources.shelf;
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox3.Location = new System.Drawing.Point(182, 258);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(378, 396);
+>>>>>>> 52ac0c188cfa70f943d1dd1d9413ca3caf5e6d50
             this.pictureBox3.TabIndex = 53;
             this.pictureBox3.TabStop = false;
             // 
@@ -367,7 +436,11 @@
             this.fourthInputColumnBB.BackColor = System.Drawing.Color.Tan;
             this.fourthInputColumnBB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.fourthInputColumnBB.Font = new System.Drawing.Font("Onyx", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.fourthInputColumnBB.Location = new System.Drawing.Point(1165, 867);
+=======
+            this.fourthInputColumnBB.Location = new System.Drawing.Point(1183, 887);
+>>>>>>> 52ac0c188cfa70f943d1dd1d9413ca3caf5e6d50
             this.fourthInputColumnBB.Name = "fourthInputColumnBB";
             this.fourthInputColumnBB.Size = new System.Drawing.Size(150, 44);
             this.fourthInputColumnBB.TabIndex = 52;
@@ -378,7 +451,11 @@
             this.secondInputColumnBB.BackColor = System.Drawing.Color.Sienna;
             this.secondInputColumnBB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.secondInputColumnBB.Font = new System.Drawing.Font("Onyx", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.secondInputColumnBB.Location = new System.Drawing.Point(1012, 817);
+=======
+            this.secondInputColumnBB.Location = new System.Drawing.Point(1027, 837);
+>>>>>>> 52ac0c188cfa70f943d1dd1d9413ca3caf5e6d50
             this.secondInputColumnBB.Name = "secondInputColumnBB";
             this.secondInputColumnBB.Size = new System.Drawing.Size(150, 44);
             this.secondInputColumnBB.TabIndex = 51;
@@ -389,7 +466,11 @@
             this.thirdInputColumnBB.BackColor = System.Drawing.Color.Peru;
             this.thirdInputColumnBB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.thirdInputColumnBB.Font = new System.Drawing.Font("Onyx", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.thirdInputColumnBB.Location = new System.Drawing.Point(1165, 817);
+=======
+            this.thirdInputColumnBB.Location = new System.Drawing.Point(1183, 837);
+>>>>>>> 52ac0c188cfa70f943d1dd1d9413ca3caf5e6d50
             this.thirdInputColumnBB.Name = "thirdInputColumnBB";
             this.thirdInputColumnBB.Size = new System.Drawing.Size(150, 44);
             this.thirdInputColumnBB.TabIndex = 50;
@@ -400,7 +481,11 @@
             this.firstInputColumnBB.BackColor = System.Drawing.Color.Maroon;
             this.firstInputColumnBB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.firstInputColumnBB.Font = new System.Drawing.Font("Onyx", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.firstInputColumnBB.Location = new System.Drawing.Point(1012, 867);
+=======
+            this.firstInputColumnBB.Location = new System.Drawing.Point(1030, 887);
+>>>>>>> 52ac0c188cfa70f943d1dd1d9413ca3caf5e6d50
             this.firstInputColumnBB.Name = "firstInputColumnBB";
             this.firstInputColumnBB.Size = new System.Drawing.Size(147, 44);
             this.firstInputColumnBB.TabIndex = 49;
@@ -411,7 +496,11 @@
             this.fourthInputColumnAB.BackColor = System.Drawing.Color.Tan;
             this.fourthInputColumnAB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.fourthInputColumnAB.Font = new System.Drawing.Font("Onyx", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.fourthInputColumnAB.Location = new System.Drawing.Point(1246, 692);
+=======
+            this.fourthInputColumnAB.Location = new System.Drawing.Point(1261, 712);
+>>>>>>> 52ac0c188cfa70f943d1dd1d9413ca3caf5e6d50
             this.fourthInputColumnAB.Name = "fourthInputColumnAB";
             this.fourthInputColumnAB.Size = new System.Drawing.Size(72, 106);
             this.fourthInputColumnAB.TabIndex = 48;
@@ -423,7 +512,11 @@
             this.thirdInputColumnAB.BackColor = System.Drawing.Color.Peru;
             this.thirdInputColumnAB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.thirdInputColumnAB.Font = new System.Drawing.Font("Onyx", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.thirdInputColumnAB.Location = new System.Drawing.Point(1168, 692);
+=======
+            this.thirdInputColumnAB.Location = new System.Drawing.Point(1183, 712);
+>>>>>>> 52ac0c188cfa70f943d1dd1d9413ca3caf5e6d50
             this.thirdInputColumnAB.Name = "thirdInputColumnAB";
             this.thirdInputColumnAB.Size = new System.Drawing.Size(72, 106);
             this.thirdInputColumnAB.TabIndex = 47;
@@ -435,7 +528,11 @@
             this.secondInputColumnAB.BackColor = System.Drawing.Color.Sienna;
             this.secondInputColumnAB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.secondInputColumnAB.Font = new System.Drawing.Font("Onyx", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.secondInputColumnAB.Location = new System.Drawing.Point(1090, 692);
+=======
+            this.secondInputColumnAB.Location = new System.Drawing.Point(1105, 712);
+>>>>>>> 52ac0c188cfa70f943d1dd1d9413ca3caf5e6d50
             this.secondInputColumnAB.Name = "secondInputColumnAB";
             this.secondInputColumnAB.Size = new System.Drawing.Size(72, 106);
             this.secondInputColumnAB.TabIndex = 46;
@@ -447,19 +544,41 @@
             this.firstInputColumnAB.BackColor = System.Drawing.Color.Maroon;
             this.firstInputColumnAB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.firstInputColumnAB.Font = new System.Drawing.Font("Onyx", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.firstInputColumnAB.Location = new System.Drawing.Point(1012, 692);
+=======
+            this.firstInputColumnAB.Location = new System.Drawing.Point(1030, 712);
+>>>>>>> 52ac0c188cfa70f943d1dd1d9413ca3caf5e6d50
             this.firstInputColumnAB.Name = "firstInputColumnAB";
             this.firstInputColumnAB.Size = new System.Drawing.Size(72, 106);
             this.firstInputColumnAB.TabIndex = 45;
             this.firstInputColumnAB.Text = "book";
             this.firstInputColumnAB.UseVisualStyleBackColor = false;
             // 
+<<<<<<< HEAD
+=======
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox4.BackgroundImage = global::GameAttempt.Properties.Resources.bookshelves2;
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox4.Location = new System.Drawing.Point(997, 634);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(436, 340);
+            this.pictureBox4.TabIndex = 44;
+            this.pictureBox4.TabStop = false;
+            // 
+>>>>>>> 52ac0c188cfa70f943d1dd1d9413ca3caf5e6d50
             // fourthCorrectColumnBB
             // 
             this.fourthCorrectColumnBB.BackColor = System.Drawing.Color.Tan;
             this.fourthCorrectColumnBB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.fourthCorrectColumnBB.Font = new System.Drawing.Font("Onyx", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.fourthCorrectColumnBB.Location = new System.Drawing.Point(799, 867);
+=======
+            this.fourthCorrectColumnBB.Location = new System.Drawing.Point(799, 887);
+>>>>>>> 52ac0c188cfa70f943d1dd1d9413ca3caf5e6d50
             this.fourthCorrectColumnBB.Name = "fourthCorrectColumnBB";
             this.fourthCorrectColumnBB.Size = new System.Drawing.Size(150, 44);
             this.fourthCorrectColumnBB.TabIndex = 79;
@@ -470,7 +589,11 @@
             this.secondCorrectColumnBB.BackColor = System.Drawing.Color.Sienna;
             this.secondCorrectColumnBB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.secondCorrectColumnBB.Font = new System.Drawing.Font("Onyx", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.secondCorrectColumnBB.Location = new System.Drawing.Point(643, 817);
+=======
+            this.secondCorrectColumnBB.Location = new System.Drawing.Point(643, 837);
+>>>>>>> 52ac0c188cfa70f943d1dd1d9413ca3caf5e6d50
             this.secondCorrectColumnBB.Name = "secondCorrectColumnBB";
             this.secondCorrectColumnBB.Size = new System.Drawing.Size(150, 44);
             this.secondCorrectColumnBB.TabIndex = 78;
@@ -481,7 +604,11 @@
             this.thirdCorrectColumnBB.BackColor = System.Drawing.Color.Peru;
             this.thirdCorrectColumnBB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.thirdCorrectColumnBB.Font = new System.Drawing.Font("Onyx", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.thirdCorrectColumnBB.Location = new System.Drawing.Point(799, 817);
+=======
+            this.thirdCorrectColumnBB.Location = new System.Drawing.Point(799, 837);
+>>>>>>> 52ac0c188cfa70f943d1dd1d9413ca3caf5e6d50
             this.thirdCorrectColumnBB.Name = "thirdCorrectColumnBB";
             this.thirdCorrectColumnBB.Size = new System.Drawing.Size(150, 44);
             this.thirdCorrectColumnBB.TabIndex = 77;
@@ -492,7 +619,11 @@
             this.firstCorrectColumnBB.BackColor = System.Drawing.Color.Maroon;
             this.firstCorrectColumnBB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.firstCorrectColumnBB.Font = new System.Drawing.Font("Onyx", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.firstCorrectColumnBB.Location = new System.Drawing.Point(646, 867);
+=======
+            this.firstCorrectColumnBB.Location = new System.Drawing.Point(646, 887);
+>>>>>>> 52ac0c188cfa70f943d1dd1d9413ca3caf5e6d50
             this.firstCorrectColumnBB.Name = "firstCorrectColumnBB";
             this.firstCorrectColumnBB.Size = new System.Drawing.Size(147, 44);
             this.firstCorrectColumnBB.TabIndex = 76;
@@ -503,7 +634,11 @@
             this.fourthCorrectColumnAB.BackColor = System.Drawing.Color.Tan;
             this.fourthCorrectColumnAB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.fourthCorrectColumnAB.Font = new System.Drawing.Font("Onyx", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.fourthCorrectColumnAB.Location = new System.Drawing.Point(877, 692);
+=======
+            this.fourthCorrectColumnAB.Location = new System.Drawing.Point(877, 712);
+>>>>>>> 52ac0c188cfa70f943d1dd1d9413ca3caf5e6d50
             this.fourthCorrectColumnAB.Name = "fourthCorrectColumnAB";
             this.fourthCorrectColumnAB.Size = new System.Drawing.Size(72, 106);
             this.fourthCorrectColumnAB.TabIndex = 75;
@@ -515,7 +650,11 @@
             this.thirdCorrectColumnAB.BackColor = System.Drawing.Color.Peru;
             this.thirdCorrectColumnAB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.thirdCorrectColumnAB.Font = new System.Drawing.Font("Onyx", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.thirdCorrectColumnAB.Location = new System.Drawing.Point(799, 692);
+=======
+            this.thirdCorrectColumnAB.Location = new System.Drawing.Point(799, 712);
+>>>>>>> 52ac0c188cfa70f943d1dd1d9413ca3caf5e6d50
             this.thirdCorrectColumnAB.Name = "thirdCorrectColumnAB";
             this.thirdCorrectColumnAB.Size = new System.Drawing.Size(72, 106);
             this.thirdCorrectColumnAB.TabIndex = 74;
@@ -527,7 +666,11 @@
             this.secondCorrectColumnAB.BackColor = System.Drawing.Color.Sienna;
             this.secondCorrectColumnAB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.secondCorrectColumnAB.Font = new System.Drawing.Font("Onyx", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.secondCorrectColumnAB.Location = new System.Drawing.Point(721, 692);
+=======
+            this.secondCorrectColumnAB.Location = new System.Drawing.Point(721, 712);
+>>>>>>> 52ac0c188cfa70f943d1dd1d9413ca3caf5e6d50
             this.secondCorrectColumnAB.Name = "secondCorrectColumnAB";
             this.secondCorrectColumnAB.Size = new System.Drawing.Size(72, 106);
             this.secondCorrectColumnAB.TabIndex = 73;
@@ -539,13 +682,18 @@
             this.firstCorrectColumnAB.BackColor = System.Drawing.Color.Maroon;
             this.firstCorrectColumnAB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.firstCorrectColumnAB.Font = new System.Drawing.Font("Onyx", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.firstCorrectColumnAB.Location = new System.Drawing.Point(646, 692);
+=======
+            this.firstCorrectColumnAB.Location = new System.Drawing.Point(646, 712);
+>>>>>>> 52ac0c188cfa70f943d1dd1d9413ca3caf5e6d50
             this.firstCorrectColumnAB.Name = "firstCorrectColumnAB";
             this.firstCorrectColumnAB.Size = new System.Drawing.Size(72, 106);
             this.firstCorrectColumnAB.TabIndex = 72;
             this.firstCorrectColumnAB.Text = "book";
             this.firstCorrectColumnAB.UseVisualStyleBackColor = false;
             // 
+<<<<<<< HEAD
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
@@ -567,11 +715,25 @@
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(436, 340);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+=======
+            // pictureBox7
+            // 
+            this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox7.BackgroundImage = global::GameAttempt.Properties.Resources.bookshelves2;
+            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox7.Location = new System.Drawing.Point(616, 634);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(436, 340);
+>>>>>>> 52ac0c188cfa70f943d1dd1d9413ca3caf5e6d50
             this.pictureBox7.TabIndex = 71;
             this.pictureBox7.TabStop = false;
             // 
             // IdentifyAreaUC
             // 
+<<<<<<< HEAD
+=======
+            this.BackgroundImage = global::GameAttempt.Properties.Resources.idenBackground1;
+>>>>>>> 52ac0c188cfa70f943d1dd1d9413ca3caf5e6d50
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.gamePanel);
             this.Name = "IdentifyAreaUC";
@@ -589,6 +751,12 @@
         }
 
         #endregion
+<<<<<<< HEAD
+=======
+
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+>>>>>>> 52ac0c188cfa70f943d1dd1d9413ca3caf5e6d50
         private System.Windows.Forms.ErrorProvider checkErrorProvider;
         private System.Windows.Forms.Panel gamePanel;
         private System.Windows.Forms.Label answerLabel;
@@ -627,7 +795,10 @@
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Button columnBButton7;
         private System.Windows.Forms.Button exitButton;
+<<<<<<< HEAD
         private System.Windows.Forms.Timer tutTimer;
         private System.Windows.Forms.Button btnHelp;
+=======
+>>>>>>> 52ac0c188cfa70f943d1dd1d9413ca3caf5e6d50
     }
 }

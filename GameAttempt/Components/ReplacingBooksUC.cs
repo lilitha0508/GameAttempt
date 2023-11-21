@@ -36,21 +36,99 @@ namespace GameAttempt.Components
         public ReplacingBooksUC()
         {
             InitializeComponent();
+<<<<<<< HEAD
+=======
+
+            // Enable dragging for buttons within panel1
+            foreach (Control control in panRandomList.Controls)
+            {
+                if (control is Button button)
+                {
+                    button.MouseDown += Button_MouseDown;
+                }
+            }
+
+            // Enable dropping for both panels
+            panRandomList.AllowDrop = true;
+            panSortedList.AllowDrop = true;
+
+            panRandomList.DragEnter += Panel_DragEnter;
+            panSortedList.DragEnter += Panel_DragEnter;
+
+            panRandomList.DragDrop += Panel_DragDrop;
+            panSortedList.DragDrop += Panel_DragDrop;
+
+            btnCheck.Click += btnCheck_Click;
+
+            Load += ReplacingBooksUC_Load;
+
+>>>>>>> 52ac0c188cfa70f943d1dd1d9413ca3caf5e6d50
         }
         //-----------------------------------------------------------------------------------------------------------------------------------
         private void ReplacingBooksUC_Load(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             GenerateRandomCallNumbers();
             setButtonText();
         }
         //-----------------------------------------------------------------------------------------------------------------------------------
         #region AnswerButtons
         //checks if answer is correct or incorrect and updates DB
+=======
+
+            panSortedList.AllowDrop = true;
+            panRandomList.AllowDrop = true;
+
+            // Generate random 10 call numbers
+            var randomNumbers = ranGen.GenerateRandomNumbers(3, 10);
+
+            // Create an array of buttons
+            Button[] buttons = new Button[]
+            {
+                btnBook1, btnBook2, btnBook3, btnBook4, btnBook5, btnBook6, btnBook7, btnBook8, btnBook9, btnBook10
+            };
+
+            for (int i = 0; i < Math.Min(randomNumbers.Count, buttons.Length); i++)
+            {
+                buttons[i].Text = randomNumbers[i];
+            }
+
+            //Drag and Drop
+            ControlExtension.Draggable(btnBook1, true);
+            ControlExtension.Draggable(btnBook2, true);
+            ControlExtension.Draggable(btnBook3, true);
+            ControlExtension.Draggable(btnBook4, true);
+            ControlExtension.Draggable(btnBook5, true);
+            ControlExtension.Draggable(btnBook6, true);
+            ControlExtension.Draggable(btnBook7, true);
+            ControlExtension.Draggable(btnBook8, true);
+            ControlExtension.Draggable(btnBook9, true);
+            ControlExtension.Draggable(btnBook10, true);
+
+            //plays music
+            StartPageUS.play.controls.play();
+        }
+        //-------------------------------------------------------------------------------------------------------
+        /// <summary>
+        /// Checks if the buttons are in the correct order
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+>>>>>>> 52ac0c188cfa70f943d1dd1d9413ca3caf5e6d50
         private void btnCheck_Click(object sender, EventArgs e)
         {
             if (userInput.Count < 10)
             {
+<<<<<<< HEAD
                 MessageBox.Show("Please select 10 Call Numbers!");
+=======
+                //MessageBox.Show("Please Rearrange the Numbers");
+                panBookRowSortList.BackColor = System.Drawing.Color.Red;
+            }
+            else if (panBookRowRanList.Controls.Count == 0)
+            {
+               // MessageBox.Show("Please Click the Check Button");
+>>>>>>> 52ac0c188cfa70f943d1dd1d9413ca3caf5e6d50
             }
             else
             {
@@ -79,6 +157,7 @@ namespace GameAttempt.Components
                 }
             }
         }
+<<<<<<< HEAD
         #endregion
         //---------------------------------------------------------------------------------------------------------------------------------------------//
         #region ButtonEvents
@@ -293,6 +372,38 @@ namespace GameAttempt.Components
             GenerateRandomCallNumbers();
         }
         #endregion
+=======
+        //--------------------------------------------------------------------------------------------------------
+        private Button selectedButton;
+
+        private void Button_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                selectedButton = sender as Button;
+                DoDragDrop(selectedButton, DragDropEffects.Move);
+            }
+        }
+
+        private void Panel_DragEnter(object sender, DragEventArgs e)
+        {
+            if (e.Data.GetDataPresent(typeof(Button)))
+            {
+                e.Effect = DragDropEffects.Move;
+            }
+        }
+
+        private void Panel_DragDrop(object sender, DragEventArgs e)
+        {
+            Panel destinationPanel = sender as Panel;
+            Button draggedButton = e.Data.GetData(typeof(Button)) as Button;
+
+            if (destinationPanel != null && draggedButton != null)
+            {
+                destinationPanel.Controls.Add(draggedButton);
+            }
+        }
+>>>>>>> 52ac0c188cfa70f943d1dd1d9413ca3caf5e6d50
     }
 }
 //|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| END OF FILE ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||

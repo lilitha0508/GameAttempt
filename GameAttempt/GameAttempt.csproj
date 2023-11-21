@@ -125,12 +125,15 @@
     <Compile Include="Components\WinningScreenUC.Designer.cs">
       <DependentUpon>WinningScreenUC.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="Games\FindCallNum.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Games\FindCallNum.Designer.cs">
       <DependentUpon>FindCallNum.cs</DependentUpon>
     </Compile>
+=======
+>>>>>>> 52ac0c188cfa70f943d1dd1d9413ca3caf5e6d50
     <Compile Include="Games\IdentifyAreas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -235,9 +238,12 @@
     <EmbeddedResource Include="Components\WinningScreenUC.resx">
       <DependentUpon>WinningScreenUC.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="Games\FindCallNum.resx">
       <DependentUpon>FindCallNum.cs</DependentUpon>
     </EmbeddedResource>
+=======
+>>>>>>> 52ac0c188cfa70f943d1dd1d9413ca3caf5e6d50
     <EmbeddedResource Include="Games\IdentifyAreas.resx">
       <DependentUpon>IdentifyAreas.cs</DependentUpon>
     </EmbeddedResource>
@@ -404,6 +410,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Read Me File.txt" />
+<<<<<<< HEAD
     <Content Include="Resources\witchSound.mp3" />
     <None Include="Resources\witch1.png" />
     <None Include="Resources\witch.png" />
@@ -420,6 +427,8 @@
     <None Include="Resources\handCursor1.png" />
     <None Include="Resources\handCursor2.png" />
     <None Include="Resources\findCallBack.jpg" />
+=======
+>>>>>>> 52ac0c188cfa70f943d1dd1d9413ca3caf5e6d50
     <None Include="Resources\idenBackground1.jpg" />
     <None Include="Resources\repled.png" />
     <None Include="Resources\replay.png" />

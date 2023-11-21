@@ -121,7 +121,11 @@
   <data name="replacingBooksUC1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAABQAAAAMXCAYAAABl5/juAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+<<<<<<< HEAD
         vAAADrwBlbxySQAA/7JJREFUeF7E/WeYXcl9n4v6y73Pfe5JDjq2oiUxx2EccjJyBjp3A91ohAYaOTRy
+=======
+        wAAADsABataJCQAA/7JJREFUeF7E/WeYXcl9n4v6y73Pfe5JDjq2oiUxx2EccjJyBjp3A91ohAYaOTRy
+>>>>>>> 52ac0c188cfa70f943d1dd1d9413ca3caf5e6d50
         BgbAAJjBZE7ODDOMQ5EipWEUJVKiRFESlSiJMpVsBT+SjnxkH1m2j4+P1/2/tfdv9W9X1w4Yjs798D4r
         h72qVlX9311rrX+0e8vGamp8XYJxZ2J4pMj0holq7/SmOVw4urfI9OS6IkuXrGnL8uV9Re47e7DI+UO7
         ihzeuaXI3acPFDm1f3ti48S6Fo7smirCsoM7t87h3KGdRR66dKK6dGxPW9713mVdWbhwZc2Nt66obpu/

@@ -66,6 +66,21 @@
             this.btnBook1.SuspendLayout();
             this.SuspendLayout();
             // 
+<<<<<<< HEAD
+=======
+            // panSortedList
+            // 
+            this.panSortedList.AllowDrop = true;
+            this.panSortedList.BackColor = System.Drawing.Color.Transparent;
+            this.panSortedList.BackgroundImage = global::GameAttempt.Properties.Resources.table;
+            this.panSortedList.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panSortedList.Controls.Add(this.btnCheck);
+            this.panSortedList.Location = new System.Drawing.Point(621, 379);
+            this.panSortedList.Name = "panSortedList";
+            this.panSortedList.Size = new System.Drawing.Size(533, 578);
+            this.panSortedList.TabIndex = 4;
+            // 
+>>>>>>> 52ac0c188cfa70f943d1dd1d9413ca3caf5e6d50
             // btnCheck
             // 
             this.btnCheck.BackColor = System.Drawing.Color.Transparent;
@@ -602,10 +617,29 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::GameAttempt.Properties.Resources.gameBack;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+<<<<<<< HEAD
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnHelp);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.btnCheck);
+=======
+            this.Controls.Add(this.btnBook1);
+            this.Controls.Add(this.btnBook3);
+            this.Controls.Add(this.btnBook10);
+            this.Controls.Add(this.btnBook9);
+            this.Controls.Add(this.btnBook8);
+            this.Controls.Add(this.btnBook7);
+            this.Controls.Add(this.btnBook2);
+            this.Controls.Add(this.btnBook4);
+            this.Controls.Add(this.lblScoreNum);
+            this.Controls.Add(this.btnBook6);
+            this.Controls.Add(this.lblScore);
+            this.Controls.Add(this.btnBook5);
+            this.Controls.Add(this.panSortedList);
+            this.Controls.Add(this.panRandomList);
+            this.Controls.Add(this.panBookRowSortList);
+            this.Controls.Add(this.panBookRowRanList);
+>>>>>>> 52ac0c188cfa70f943d1dd1d9413ca3caf5e6d50
             this.DoubleBuffered = true;
             this.Name = "ReplacingBooksUC";
             this.Size = new System.Drawing.Size(1335, 773);

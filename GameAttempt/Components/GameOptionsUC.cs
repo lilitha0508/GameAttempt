@@ -90,8 +90,12 @@ namespace GameAttempt.Components
             }
             else if (count == 2)
             {
+<<<<<<< HEAD
                 FindCallNum findCallNum = new FindCallNum();
                 findCallNum.ShowDialog();
+=======
+                
+>>>>>>> 52ac0c188cfa70f943d1dd1d9413ca3caf5e6d50
             }
         }
         //-------------------------------------------------------------------------------------------------------------------------------------------------------
